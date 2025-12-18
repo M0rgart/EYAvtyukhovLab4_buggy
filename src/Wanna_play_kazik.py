@@ -88,7 +88,6 @@ class CasinoBalance(MutableMapping):
         change = value - old_value
         log = f'Баланс {key}: {old_value} -> {value} (Изменение: {'+' if change >= 0 else ''}{change})'
         self._change_log.append(log)
-        print(f"[LOG] {log}")
 
     def __delitem__(self, key: str) -> None:
         """
