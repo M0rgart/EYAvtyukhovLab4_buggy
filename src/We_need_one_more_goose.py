@@ -1,6 +1,8 @@
 import src.Wanna_play_kazik, src.Players
 import random
 
+from src.Players import Player
+
 
 class Goose:
     """
