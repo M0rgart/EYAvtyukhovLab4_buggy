@@ -151,6 +151,7 @@ class PlayerCollection(MutableSequence):
         объект Player если такой есть, иначе None
         """
         for player in self._players:
+#            if player.name is name: #Ошибка 3: использование is для сравнения строк
             if player.name == name:
                 return player
         return None
