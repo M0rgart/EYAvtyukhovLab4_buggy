@@ -209,7 +209,9 @@ class Casino:
 
         if player.bet(bet):
             self.balance[player.name] = player.balance
-            if random.random() > 0.67:
+            check = random.random()
+#            if check > 0.67 or 1: # Ошибка 2: or 1 делает условие всегда истинно
+            if check > 0.67:
                 win = bet * 3
                 player.win(win)
                 self.balance[player.name] = player.balance
