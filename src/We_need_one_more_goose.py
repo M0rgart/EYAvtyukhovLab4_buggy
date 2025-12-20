@@ -89,6 +89,7 @@ class WarGoose(Goose):
         Возвращает:
         результат атаки
         """
+#        dmg = random.randint(1, self.honk_volume)
         dmg = random.randint(1, self.power)
         player.balance = max(0, player.balance - dmg)
         return f'{self.name} атакует {player.name}! Баланс игрока уменьшен на {dmg}'

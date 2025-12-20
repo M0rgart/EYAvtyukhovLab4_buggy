@@ -56,7 +56,7 @@ def run_sim(steps: int = 20, seed: int | None = None, inf: bool = False) -> None
         print(f"\n=== Ход симуляции ===")
     #    for i in range(1, steps + 1): # Ошибка1: симуляция начинается с шага 2
         if steps >= 0:
-            for i in range(steps):
+            for i in range(steps): # Ошибка 4. Отсутствует проверка значений steps
                 print(f"Шаг {i + 1}:")
                 result = casino.step()
                 print(f"  {result}\n")
